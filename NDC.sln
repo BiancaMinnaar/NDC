@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDC.Droid", "Droid\NDC.Droi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDC.MobileAppService", "MobileAppService\NDC.MobileAppService.csproj", "{7ECF12A9-C8FC-48AC-B0C3-7EC7FA09A057}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasePCL", "BasePCL\BasePCL.csproj", "{F34FE759-9422-4777-84F5-E253B9A3BA16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -55,5 +57,17 @@ Global
 		{7ECF12A9-C8FC-48AC-B0C3-7EC7FA09A057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECF12A9-C8FC-48AC-B0C3-7EC7FA09A057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECF12A9-C8FC-48AC-B0C3-7EC7FA09A057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|iPhone.Build.0 = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34FE759-9422-4777-84F5-E253B9A3BA16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
