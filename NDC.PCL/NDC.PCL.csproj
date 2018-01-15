@@ -70,6 +70,7 @@
     <Compile Include="Interface\ViewController\Control\ReUsable\IRadioButtonItemViewControlController.cs" />
     <Compile Include="Implementation\Repository\ProjectBaseRepository.cs" />
     <Compile Include="Implementation\ViewModel\UserViewModel.cs" />
+    <Compile Include="Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
