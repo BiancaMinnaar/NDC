@@ -32,19 +32,21 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Implementation\ViewModel\Base\NDCBaseViewModel.cs" />
-    <Compile Include="Implementation\Login.xaml.cs">
+    <Compile Include="Implementation\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Implementation\User\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="Implementation\Login.xaml">
+    <EmbeddedResource Include="Implementation\User\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Implementation\" />
+    <Folder Include="Implementation\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasePCL\BasePCL.csproj">
