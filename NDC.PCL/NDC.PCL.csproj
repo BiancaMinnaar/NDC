@@ -9,7 +9,7 @@
     <RootNamespace>NDC.PCL</RootNamespace>
     <AssemblyName>NDC.PCL</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,22 +31,52 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Implementation\ViewModel\Base\NDCBaseViewModel.cs" />
-    <Compile Include="Implementation\ViewModel\LoginViewModel.cs" />
-    <Compile Include="Implementation\User\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
+    <Compile Include="Implementation\Repository\LoginRepository.cs" />
+    <Compile Include="Implementation\Repository\MasterRepository.cs" />
+    <Compile Include="Implementation\Service\AuthenticateService.cs" />
+    <Compile Include="Implementation\Service\BaseService.cs" />
+    <Compile Include="Implementation\View\ByteArrayToImageSourceConverter.cs" />
+    <Compile Include="Implementation\View\ImageResourceExtension.cs" />
+    <Compile Include="Implementation\View\Inverter.cs" />
+    <Compile Include="Implementation\View\NullVisibilityConverter.cs" />
+    <Compile Include="Implementation\View\toUpper.cs" />
+    <Compile Include="Implementation\View\Base\ProjectBaseContentPage.cs" />
+    <Compile Include="Implementation\View\Base\ProjectBaseContentScrollView.cs" />
+    <Compile Include="Implementation\View\Base\ProjectBaseContentView.cs" />
+    <Compile Include="Implementation\View\Base\ProjectBaseStackContentView.cs" />
+    <Compile Include="Implementation\View\User\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementation\ViewController\Base\CheckAndBalance.cs" />
+    <Compile Include="Implementation\ViewController\Base\ProjectBaseViewController.cs" />
+    <Compile Include="Implementation\ViewController\User\LoginViewController.cs" />
+    <Compile Include="Implementation\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Implementation\ViewModel\Base\ProjectBaseViewModel.cs" />
+    <Compile Include="Implementation\ViewModel\Base\MasterModel.cs" />
+    <Compile Include="Implementation\ViewModel\Base\SVGBindingProperty.cs" />
+    <Compile Include="Interface\Platform\INotificationPlatform.cs" />
+    <Compile Include="Interface\Repository\ILoginRepository.cs" />
+    <Compile Include="Interface\Repository\IMasterRepository.cs" />
+    <Compile Include="Interface\Service\IAuthenticateService.cs" />
+    <Compile Include="Interface\ViewController\ILoginViewController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\ICheckBoxViewControlController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\ICheckListItemController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IFullScreenImageViewController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IGalleryDescriptionListItemController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IGalleryDescriptionViewControlController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IGalleryListItemController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IImageGalleryController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IOtherTextBoxViewControlController.cs" />
+    <Compile Include="Interface\ViewController\Control\ReUsable\IRadioButtonItemViewControlController.cs" />
+    <Compile Include="Implementation\Repository\ProjectBaseRepository.cs" />
+    <Compile Include="Implementation\ViewModel\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="Implementation\User\Login.xaml">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Implementation\View\User\LoginView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementation\" />
-    <Folder Include="Implementation\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasePCL\BasePCL.csproj">
@@ -64,9 +94,33 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.91020\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.2.0.0\lib\netstandard1.1\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.5.1\lib\netstandard1.1\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.5.1\lib\netstandard1.1\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NGraphics">
+      <HintPath>..\packages\NGraphics.0.4.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\NGraphics.dll</HintPath>
+    </Reference>
+    <Reference Include="TwinTechsForms.SvgImage">
+      <HintPath>..\packages\TwinTechsForms.SvgImage.0.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\TwinTechsForms.SvgImage.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Implementation\View\Control\ReUsable\" />
+    <Folder Include="Implementation\ViewModel\Control\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.91020\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.91020\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

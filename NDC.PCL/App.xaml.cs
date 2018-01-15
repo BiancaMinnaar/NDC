@@ -1,5 +1,5 @@
 ﻿using System;
-using NDC.PCL.Implementation;
+using NDC.Implementation.View.Login;
 using Xamarin.Forms;
 
 namespace NDC
@@ -10,7 +10,7 @@ namespace NDC
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new LoginView();
         }
     }
 }
