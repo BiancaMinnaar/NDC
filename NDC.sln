@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasePCL", "BasePCL\BasePCL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDC.PCL", "NDC.PCL\NDC.PCL.csproj", "{5F871EA4-C58F-4878-BDF6-98BC1DF79C54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceConsole", "SourceConsole\SourceConsole.csproj", "{335063C5-C4DE-4196-8957-EDF53F381C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -81,5 +83,17 @@ Global
 		{5F871EA4-C58F-4878-BDF6-98BC1DF79C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F871EA4-C58F-4878-BDF6-98BC1DF79C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F871EA4-C58F-4878-BDF6-98BC1DF79C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|iPhone.ActiveCfg = Release|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|iPhone.Build.0 = Release|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|iPhone.Build.0 = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{335063C5-C4DE-4196-8957-EDF53F381C8B}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 EndGlobal
