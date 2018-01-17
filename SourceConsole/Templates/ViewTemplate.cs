@@ -21,30 +21,95 @@ namespace SourceConsole.Templates {
             this.GenerationEnvironment = null;
             
             #line 6 ""
-            this.Write(@"
-<?xml version=""1.0"" encoding=""UTF-8""?>
-<b:ProjectBaseContentPage 
-    xmlns=""http://xamarin.com/schemas/2014/forms"" 
-    xmlns:x=""http://schemas.microsoft.com/winfx/2009/xaml""
-    xmlns:m=""clr-namespace:NDC.Implementation.ViewModel""
-    xmlns:p=""clr-namespace:NDC.Implementation.ViewController""
-    xmlns:b=""clr-namespace:NDC.Implementation.View""
-    xmlns:svg=""clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView""
-    x:Class=""NDC.Implementation.View.Login.");
+            this.Write("\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<b:ProjectBaseContentPage \n    xmlns=\"htt" +
+                    "p://xamarin.com/schemas/2014/forms\" \n    xmlns:x=\"http://schemas.microsoft.com/w" +
+                    "infx/2009/xaml\"\n    xmlns:m=\"clr-namespace:");
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(".Implementation.ViewModel\"\n    xmlns:p=\"clr-namespace:");
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(".Implementation.ViewController\"\n    xmlns:b=\"clr-namespace:");
+            
+            #line default
+            #line hidden
+            
+            #line 13 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 13 ""
+            this.Write(".Implementation.View\"\n    xmlns:svg=\"clr-namespace:TwinTechsForms.NControl;assemb" +
+                    "ly=TwinTechsForms.NControl.SvgImageView\"\n    x:Class=\"");
             
             #line default
             #line hidden
             
             #line 15 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ClassName ));
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
             
             #line default
             #line hidden
             
             #line 15 ""
-            this.Write("\" \n    x:TypeArguments=\"p:LoginViewController, m:LoginViewModel\" \n    BackgroundC" +
-                    "olor=\"#565E60\"\n    Title=\"Login\">\n    <ContentPage.Content>\n        \n    </Conte" +
-                    "ntPage.Content>\n</b:ProjectBaseContentPage>\n");
+            this.Write(".Implementation.View.");
+            
+            #line default
+            #line hidden
+            
+            #line 15 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewName ));
+            
+            #line default
+            #line hidden
+            
+            #line 15 ""
+            this.Write("\" \n    x:TypeArguments=\"p:");
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewControllerName ));
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write(", m:");
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewModelName ));
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write("\" \n    BackgroundColor=\"#565E60\"\n    Title=\"Login\">\n    <ContentPage.Content>\n   " +
+                    "     \n    </ContentPage.Content>\n</b:ProjectBaseContentPage>\n");
             
             #line default
             #line hidden

@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using NDC.Implementation.ViewController;
 using NDC.Implementation.ViewModel;
 
-namespace NDC.Implementation.View.Login
+namespace <#= _DataModel.ProjectName #>.Implementation.View
 {
-    public partial class LoginView : ProjectBaseContentPage<LoginViewController, LoginViewModel>
+    public partial class <#= _DataModel.ViewName #> : ProjectBaseContentPage<<#= _DataModel.ViewControllerName #>, <#= _DataModel.ViewModelName #>>
     {
-        public LoginView()
+        public <#= _DataModel.ViewName #>()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
@@ -25,9 +25,9 @@ namespace NDC.Implementation.View.Login
         {
         }
 
-        public async Task On_Login_Click(object sender, EventArgs e)
+        public async Task On_<#= _DataModel.EventName #>_Event(object sender, EventArgs e)
         {
-            await _ViewController.Login();
+            await _ViewController.<#= _DataModel.EventName #>();
         }
     }
 }

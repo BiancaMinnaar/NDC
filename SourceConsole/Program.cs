@@ -7,9 +7,30 @@ namespace SourceConsole
     {
         public static void Main(string[] args)
         {
-            ViewTemplate tt = new ViewTemplate(new TemplateDataModel(){ClassName="LoginView"});
-            string fileOut = tt.TransformText();
-            System.IO.File.WriteAllText("View.cs", fileOut);  
+            string screenName;
+            string projectName;
+
+            if (args.Length > 0)
+            {
+                screenName = args[0];
+                projectName = args[1];
+            }
+            else
+            {
+                Console.Write("Screen Name:");
+                screenName = Console.ReadLine();
+                Console.Write("Project Name:");
+                projectName = Console.ReadLine();
+            }
+            var screenData = new TemplateDataModel(screenName, projectName);
+
+            ViewTemplate viewTemplate = new ViewTemplate(screenData);
+            string fileOut = viewTemplate.TransformText();
+            System.IO.File.WriteAllText(screenData.ViewName + ".xaml", fileOut);  
+
+            ViewCodeBehindTemplate viewCodeBehindTemplate = new ViewCodeBehindTemplate(screenData);
+            string viewCodeBehindOut = viewCodeBehindTemplate.TransformText();
+            System.IO.File.WriteAllText(screenData.ViewName + ".cs", viewCodeBehindOut);
         }
     }
 }

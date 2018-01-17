@@ -43,6 +43,10 @@
     </Compile>
     <Compile Include="Templates\TemplateDataModel.cs" />
     <Compile Include="Templates\ViewTemplatePartial.cs" />
+    <Compile Include="Templates\ViewModelTemplate.cs">
+      <DependentUpon>ViewModelTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ViewCodeBehindTemplatePartial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
@@ -54,11 +58,15 @@
     </None>
     <None Include="Templates\ViewControllerTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>ViewController.cs</LastGenOutput>
+      <LastGenOutput>ViewControllerTemplate.cs</LastGenOutput>
     </None>
     <None Include="Templates\ViewCodeBehindTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>ViewCodeBehind.cs</LastGenOutput>
+      <LastGenOutput>ViewCodeBehindTemplate.cs</LastGenOutput>
+    </None>
+    <None Include="Templates\ViewModelTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ViewModelTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

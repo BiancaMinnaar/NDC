@@ -15,109 +15,13 @@ namespace SourceConsole.Templates {
     using System;
     
     
-    public partial class ViewCodeBehindTemplate : ViewCodeBehindTemplateBase {
+    public partial class ViewModelTemplate : ViewModelTemplateBase {
         
         public virtual string TransformText() {
             this.GenerationEnvironment = null;
             
             #line 6 ""
-            this.Write("\nusing System;\nusing Xamarin.Forms;\nusing System.Threading.Tasks;\nusing NDC.Imple" +
-                    "mentation.ViewController;\nusing NDC.Implementation.ViewModel;\n\nnamespace ");
-            
-            #line default
-            #line hidden
-            
-            #line 13 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
-            
-            #line default
-            #line hidden
-            
-            #line 13 ""
-            this.Write(".Implementation.View\n{\n    public partial class ");
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewName ));
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(" : ProjectBaseContentPage<");
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewControllerName ));
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(", ");
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewModelName ));
-            
-            #line default
-            #line hidden
-            
-            #line 15 ""
-            this.Write(">\n    {\n        public ");
-            
-            #line default
-            #line hidden
-            
-            #line 17 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewName ));
-            
-            #line default
-            #line hidden
-            
-            #line 17 ""
-            this.Write(@"()
-        {
-            InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
-            BindingContext = _ViewController.InputObject;
-        }
-
-        protected override void SetSVGCollection()
-        {
-        }
-
-        public async Task On_");
-            
-            #line default
-            #line hidden
-            
-            #line 28 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
-            
-            #line default
-            #line hidden
-            
-            #line 28 ""
-            this.Write("_Event(object sender, EventArgs e)\n        {\n            await _ViewController.");
-            
-            #line default
-            #line hidden
-            
-            #line 30 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
-            
-            #line default
-            #line hidden
-            
-            #line 30 ""
-            this.Write("();\n        }\n    }\n}\n\n\n");
+            this.Write("\n");
             
             #line default
             #line hidden
@@ -128,7 +32,7 @@ namespace SourceConsole.Templates {
         }
     }
     
-    public class ViewCodeBehindTemplateBase {
+    public class ViewModelTemplateBase {
         
         private global::System.Text.StringBuilder builder;
         
