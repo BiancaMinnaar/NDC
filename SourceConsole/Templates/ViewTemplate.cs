@@ -15,7 +15,7 @@ namespace SourceConsole.Templates {
     using System;
     
     
-    public partial class ViewT : ViewTBase {
+    public partial class ViewTemplate : ViewTemplateBase {
         
         public virtual string TransformText() {
             this.GenerationEnvironment = null;
@@ -30,14 +30,21 @@ namespace SourceConsole.Templates {
     xmlns:p=""clr-namespace:NDC.Implementation.ViewController""
     xmlns:b=""clr-namespace:NDC.Implementation.View""
     xmlns:svg=""clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView""
-    x:Class=""NDC.Implementation.View.Login."" 
-    x:TypeArguments=""p:LoginViewController, m:LoginViewModel"" 
-    BackgroundColor=""#565E60""
-    Title=""Login"">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
-</b:ProjectBaseContentPage>");
+    x:Class=""NDC.Implementation.View.Login.");
+            
+            #line default
+            #line hidden
+            
+            #line 15 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ClassName ));
+            
+            #line default
+            #line hidden
+            
+            #line 15 ""
+            this.Write("\" \n    x:TypeArguments=\"p:LoginViewController, m:LoginViewModel\" \n    BackgroundC" +
+                    "olor=\"#565E60\"\n    Title=\"Login\">\n    <ContentPage.Content>\n        \n    </Conte" +
+                    "ntPage.Content>\n</b:ProjectBaseContentPage>\n");
             
             #line default
             #line hidden
@@ -48,7 +55,7 @@ namespace SourceConsole.Templates {
         }
     }
     
-    public class ViewTBase {
+    public class ViewTemplateBase {
         
         private global::System.Text.StringBuilder builder;
         

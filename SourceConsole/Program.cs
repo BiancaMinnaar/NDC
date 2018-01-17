@@ -7,7 +7,7 @@ namespace SourceConsole
     {
         public static void Main(string[] args)
         {
-            ViewT tt = new ViewT();
+            ViewTemplate tt = new ViewTemplate(new TemplateDataModel(){ClassName="LoginView"});
             string fileOut = tt.TransformText();
             System.IO.File.WriteAllText("View.cs", fileOut);  
         }

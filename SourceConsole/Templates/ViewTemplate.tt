@@ -12,7 +12,7 @@
     xmlns:p="clr-namespace:NDC.Implementation.ViewController"
     xmlns:b="clr-namespace:NDC.Implementation.View"
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
-    x:Class="NDC.Implementation.View.Login." 
+    x:Class="NDC.Implementation.View.Login.<#= _DataModel.ClassName #>" 
     x:TypeArguments="p:LoginViewController, m:LoginViewModel" 
     BackgroundColor="#565E60"
     Title="Login">

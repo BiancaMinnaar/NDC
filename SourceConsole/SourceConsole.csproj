@@ -32,18 +32,40 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates\ViewT.cs">
-      <DependentUpon>ViewT.tt</DependentUpon>
+    <Compile Include="Templates\ViewTemplate.cs">
+      <DependentUpon>ViewTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Include="Templates\ViewControllerTemplate.cs">
+      <DependentUpon>ViewControllerTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ViewCodeBehindTemplate.cs">
+      <DependentUpon>ViewCodeBehindTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\TemplateDataModel.cs" />
+    <Compile Include="Templates\ViewTemplatePartial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Templates\ViewT.tt">
+    <None Include="Templates\ViewTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>ViewT.cs</LastGenOutput>
+      <LastGenOutput>ViewTemplate.cs</LastGenOutput>
     </None>
+    <None Include="Templates\ViewControllerTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ViewController.cs</LastGenOutput>
+    </None>
+    <None Include="Templates\ViewCodeBehindTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ViewCodeBehind.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasePCL\BasePCL.csproj">
+      <Project>{F34FE759-9422-4777-84F5-E253B9A3BA16}</Project>
+      <Name>BasePCL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
