@@ -36,10 +36,9 @@ namespace SourceConsole
 			generateClass(screenData, new ViewControllerInterfaceTemplate(screenData), screenData.ViewControllerInterfaceName + ".cs");
             generateClass(screenData, new ViewControllerTemplate(screenData), screenData.ViewControllerName + ".cs");
 			generateClass(screenData, new RepositoryInterfaceTemplate(screenData), screenData.RepositoryInterfaceName + ".cs");
-
+            generateClass(screenData, new RepositoryTemplate(screenData), screenData.RepositoryName + ".cs");
             generateClass(screenData, new ServiceInterfaceTemplate(screenData), screenData.ServiceInterfaceName + ".cs");
-
-
+            generateClass(screenData, new ServiceTemplate(screenData), screenData.ServiceName + ".cs");
         }
     }
 }

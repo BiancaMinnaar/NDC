@@ -66,6 +66,10 @@
       <DependentUpon>ServiceInterfaceTemplate.tt</DependentUpon>
     </Compile>
     <Compile Include="Templates\ServiceInterfaceTemplatePartial.cs" />
+    <Compile Include="Templates\ServiceTemplate.cs">
+      <DependentUpon>ServiceTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ServiceTemplatePartial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
@@ -102,6 +106,10 @@
     <None Include="Templates\ServiceInterfaceTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>ServiceInterfaceTemplate.cs</LastGenOutput>
+    </None>
+    <None Include="Templates\ServiceTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ServiceTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
