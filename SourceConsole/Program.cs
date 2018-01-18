@@ -44,6 +44,8 @@ namespace SourceConsole
 
             var repositoryTemplate = new RepositoryTemplate(screenData);
             generateClass(screenData, repositoryTemplate, screenData.RepositoryName + ".cs");
+
+            generateClass(screenData, new ViewControllerInterfaceTemplate(screenData), screenData.ViewControllerInterfaceName + ".cs");
         }
     }
 }
