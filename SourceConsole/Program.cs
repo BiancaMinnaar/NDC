@@ -30,17 +30,20 @@ namespace SourceConsole
             }
             var screenData = new TemplateDataModel(screenName, projectName);
 
-            ViewTemplate viewTemplate = new ViewTemplate(screenData);
+            var viewTemplate = new ViewTemplate(screenData);
             generateClass(screenData, viewTemplate, screenData.ViewName + ".xaml");
 
-            ViewCodeBehindTemplate viewCodeBehindTemplate = new ViewCodeBehindTemplate(screenData);
+            var viewCodeBehindTemplate = new ViewCodeBehindTemplate(screenData);
             generateClass(screenData, viewCodeBehindTemplate, screenData.ViewName + ".cs");
 
-            ViewControllerTemplate viewControllerTemplate = new ViewControllerTemplate(screenData);
+            var viewControllerTemplate = new ViewControllerTemplate(screenData);
             generateClass(screenData, viewControllerTemplate, screenData.ViewControllerName + ".cs");
 
-            ViewModelTemplate viewModelTemplate = new ViewModelTemplate(screenData);
+            var viewModelTemplate = new ViewModelTemplate(screenData);
             generateClass(screenData, viewModelTemplate, screenData.ViewModelName + ".cs");
+
+            var repositoryTemplate = new RepositoryTemplate(screenData);
+            generateClass(screenData, repositoryTemplate, screenData.RepositoryName + ".cs");
         }
     }
 }

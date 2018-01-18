@@ -50,6 +50,10 @@
     <Compile Include="Templates\ViewControllerTemplatePartial.cs" />
     <Compile Include="Templates\ITemplate.cs" />
     <Compile Include="Templates\ViewModelTemplatePartial.cs" />
+    <Compile Include="Templates\RepositoryTemplate.cs">
+      <DependentUpon>RepositoryTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\RepositoryTemplatePartial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
@@ -70,6 +74,10 @@
     <None Include="Templates\ViewModelTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>ViewModelTemplate.cs</LastGenOutput>
+    </None>
+    <None Include="Templates\RepositoryTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>RepositoryTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
