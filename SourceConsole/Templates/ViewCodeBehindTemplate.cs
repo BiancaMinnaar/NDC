@@ -21,8 +21,31 @@ namespace SourceConsole.Templates {
             this.GenerationEnvironment = null;
             
             #line 6 ""
-            this.Write("\nusing System;\nusing Xamarin.Forms;\nusing System.Threading.Tasks;\nusing NDC.Imple" +
-                    "mentation.ViewController;\nusing NDC.Implementation.ViewModel;\n\nnamespace ");
+            this.Write("\nusing System;\nusing Xamarin.Forms;\nusing System.Threading.Tasks;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(".Implementation.ViewController;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(".Implementation.ViewModel;\n\nnamespace ");
             
             #line default
             #line hidden

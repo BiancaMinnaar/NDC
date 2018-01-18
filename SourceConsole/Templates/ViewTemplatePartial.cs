@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SourceConsole.Templates
 {
-    partial class ViewTemplate
+    partial class ViewTemplate : ITemplate
     {
         TemplateDataModel _DataModel;
 

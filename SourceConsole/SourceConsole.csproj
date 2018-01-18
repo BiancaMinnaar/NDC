@@ -47,6 +47,8 @@
       <DependentUpon>ViewModelTemplate.tt</DependentUpon>
     </Compile>
     <Compile Include="Templates\ViewCodeBehindTemplatePartial.cs" />
+    <Compile Include="Templates\ViewControllerTemplatePartial.cs" />
+    <Compile Include="Templates\ITemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />

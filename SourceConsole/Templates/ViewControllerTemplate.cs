@@ -21,37 +21,205 @@ namespace SourceConsole.Templates {
             this.GenerationEnvironment = null;
             
             #line 6 ""
-            this.Write(@"
-using System.Threading.Tasks;
-using NDC.Base;
-using NDC.Implementation.Repository;
-using NDC.Implementation.Service;
-using NDC.Implementation.ViewModel;
-using NDC.Interface.Reposetory;
-using NDC.Interface.Service;
-using NDC.Interface.ViewController;
-
-namespace NDC.Implementation.ViewController
-{
-    public class LoginViewController : ProjectBaseViewController<LoginViewModel>, ILoginViewController
-    {
-        ILoginRepository _Reposetory;
-        IAuthenticateService _AuthService;
+            this.Write("\nusing System.Threading.Tasks;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 8 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 8 ""
+            this.Write(".Base;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 9 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 9 ""
+            this.Write(".Implementation.Repository;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(".Implementation.Service;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 11 ""
+            this.Write(".Implementation.ViewModel;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(".Interface.Reposetory;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 13 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 13 ""
+            this.Write(".Interface.Service;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 14 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 14 ""
+            this.Write(".Interface.ViewController;\n\nnamespace ");
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 16 ""
+            this.Write(".Implementation.ViewController\n{\n    public class ");
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewControllerName ));
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write(" : ProjectBaseViewController<");
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewModelName ));
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write(">, I");
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewControllerName ));
+            
+            #line default
+            #line hidden
+            
+            #line 18 ""
+            this.Write("\n    {\n        I");
+            
+            #line default
+            #line hidden
+            
+            #line 20 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
+            
+            #line default
+            #line hidden
+            
+            #line 20 ""
+            this.Write("Repository _Reposetory;\n        I");
+            
+            #line default
+            #line hidden
+            
+            #line 21 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
+            
+            #line default
+            #line hidden
+            
+            #line 21 ""
+            this.Write(@"Service _Service;
 
         public override void SetRepositories()
         {
             _MasterRepo.NetworkInterface = (U, P, A) => ExecuteQueryWithObjectAndNetworkAccessAsync(U, P, A);
             _MasterRepo.NetworkInterfaceWithTypedParameters = (U, P, A) => ExecuteQueryWithTypedParametersAndNetworkAccessAsync(U, P, A);
-            _AuthService = new AuthenticateService(_MasterRepo.NetworkInterface);
-            _Reposetory = new LoginRepository(_MasterRepo, _AuthService);
-        }
-
-        public async Task Login()
-        {
+            _Service = new ");
             
-        }
-    }
-}");
+            #line default
+            #line hidden
+            
+            #line 27 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
+            
+            #line default
+            #line hidden
+            
+            #line 27 ""
+            this.Write("Service(_MasterRepo.NetworkInterface);\n            _Reposetory = new ");
+            
+            #line default
+            #line hidden
+            
+            #line 28 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
+            
+            #line default
+            #line hidden
+            
+            #line 28 ""
+            this.Write("Repository(_MasterRepo, _AuthService);\n        }\n\n        public async Task ");
+            
+            #line default
+            #line hidden
+            
+            #line 31 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.EventName ));
+            
+            #line default
+            #line hidden
+            
+            #line 31 ""
+            this.Write("()\n        {\n            \n        }\n    }\n}");
             
             #line default
             #line hidden

@@ -5,6 +5,12 @@ namespace SourceConsole
 {
     class MainClass
     {
+        static void generateClass(TemplateDataModel screenData, ITemplate template, string fileName)
+        {
+            string templateOutput = template.TransformText();
+            System.IO.File.WriteAllText(fileName, templateOutput);
+        }
+
         public static void Main(string[] args)
         {
             string screenName;
@@ -25,12 +31,13 @@ namespace SourceConsole
             var screenData = new TemplateDataModel(screenName, projectName);
 
             ViewTemplate viewTemplate = new ViewTemplate(screenData);
-            string fileOut = viewTemplate.TransformText();
-            System.IO.File.WriteAllText(screenData.ViewName + ".xaml", fileOut);  
+            generateClass(screenData, viewTemplate, screenData.ViewName + ".xaml");
 
             ViewCodeBehindTemplate viewCodeBehindTemplate = new ViewCodeBehindTemplate(screenData);
-            string viewCodeBehindOut = viewCodeBehindTemplate.TransformText();
-            System.IO.File.WriteAllText(screenData.ViewName + ".cs", viewCodeBehindOut);
+            generateClass(screenData, viewCodeBehindTemplate, screenData.ViewName + ".cs");
+
+            ViewControllerTemplate viewControllerTemplate = new ViewControllerTemplate(screenData);
+            generateClass(screenData, viewControllerTemplate, screenData.ViewControllerName + ".cs");
         }
     }
 }
