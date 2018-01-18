@@ -38,6 +38,9 @@ namespace SourceConsole
 
             ViewControllerTemplate viewControllerTemplate = new ViewControllerTemplate(screenData);
             generateClass(screenData, viewControllerTemplate, screenData.ViewControllerName + ".cs");
+
+            ViewModelTemplate viewModelTemplate = new ViewModelTemplate(screenData);
+            generateClass(screenData, viewModelTemplate, screenData.ViewModelName + ".cs");
         }
     }
 }

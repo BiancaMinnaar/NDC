@@ -21,7 +21,43 @@ namespace SourceConsole.Templates {
             this.GenerationEnvironment = null;
             
             #line 6 ""
-            this.Write("\n");
+            this.Write("\nusing System;\nusing ");
+            
+            #line default
+            #line hidden
+            
+            #line 8 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 8 ""
+            this.Write(".Base;\n\nnamespace ");
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ProjectName ));
+            
+            #line default
+            #line hidden
+            
+            #line 10 ""
+            this.Write(".Implementation.ViewModel\n{\n    public class ");
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewModelName ));
+            
+            #line default
+            #line hidden
+            
+            #line 12 ""
+            this.Write(" : ProjectBaseViewModel\n    {\n        \n    }\n}");
             
             #line default
             #line hidden

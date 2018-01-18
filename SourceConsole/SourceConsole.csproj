@@ -49,6 +49,7 @@
     <Compile Include="Templates\ViewCodeBehindTemplatePartial.cs" />
     <Compile Include="Templates\ViewControllerTemplatePartial.cs" />
     <Compile Include="Templates\ITemplate.cs" />
+    <Compile Include="Templates\ViewModelTemplatePartial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
