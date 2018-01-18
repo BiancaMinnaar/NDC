@@ -24,7 +24,7 @@ namespace NDC.Implementation.ViewController
 
         public async Task Login()
         {
-            
+            _Reposetory.Login();
         }
     }
 }

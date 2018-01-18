@@ -41,38 +41,40 @@
     <Compile Include="Templates\ViewCodeBehindTemplate.cs">
       <DependentUpon>ViewCodeBehindTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\TemplateDataModel.cs" />
-    <Compile Include="Templates\ViewTemplatePartial.cs" />
     <Compile Include="Templates\ViewModelTemplate.cs">
       <DependentUpon>ViewModelTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\ViewCodeBehindTemplatePartial.cs" />
-    <Compile Include="Templates\ViewControllerTemplatePartial.cs" />
-    <Compile Include="Templates\ITemplate.cs" />
-    <Compile Include="Templates\ViewModelTemplatePartial.cs" />
     <Compile Include="Templates\RepositoryTemplate.cs">
       <DependentUpon>RepositoryTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\RepositoryTemplatePartial.cs" />
     <Compile Include="Templates\ViewControllerInterfaceTemplate.cs">
       <DependentUpon>ViewControllerInterfaceTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\ViewControllerInterfacePartial.cs" />
     <Compile Include="Templates\RepositoryInterfaceTemplate.cs">
       <DependentUpon>RepositoryInterfaceTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\RepositoryInterfaceTemplatePartial.cs" />
     <Compile Include="Templates\ServiceInterfaceTemplate.cs">
       <DependentUpon>ServiceInterfaceTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\ServiceInterfaceTemplatePartial.cs" />
     <Compile Include="Templates\ServiceTemplate.cs">
       <DependentUpon>ServiceTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Include="Templates\ServiceTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\RepositoryInterfaceTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ServiceInterfaceTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ServiceTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ViewControllerInterfacePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ViewCodeBehindTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\RepositoryTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ViewControllerTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ViewModelTemplatePartial.cs" />
+    <Compile Include="Templates\PartialClasses\ViewTemplatePartial.cs" />
+    <Compile Include="Templates\DataModel\TemplateDataModel.cs" />
+    <Compile Include="Templates\PartialClasses\ITemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
+    <Folder Include="Templates\PartialClasses\" />
+    <Folder Include="Templates\DataModel\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Templates\ViewTemplate.tt">
