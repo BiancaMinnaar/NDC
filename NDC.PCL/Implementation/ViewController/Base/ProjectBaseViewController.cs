@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using NDC.Base;
-using NCD.Interface.Repository;
+using NDC.Interface.Repository;
 using NDC.Implementation.ViewController.Base;
 using NDC.Implementation.Repository;
 

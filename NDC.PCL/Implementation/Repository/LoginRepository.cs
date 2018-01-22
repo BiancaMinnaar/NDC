@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using NDC.Interface.Service;
-using NCD.Interface.Repository;
+using NDC.Interface.Repository;
 using NDC.Implementation.ViewModel;
 using NDC.Interface.Reposetory;
 

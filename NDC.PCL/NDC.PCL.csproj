@@ -71,12 +71,26 @@
     <Compile Include="Implementation\Repository\ProjectBaseRepository.cs" />
     <Compile Include="Implementation\ViewModel\UserViewModel.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Implementation\Service\HomeViewService.cs" />
+    <Compile Include="Implementation\Repository\HomeViewRepository.cs" />
+    <Compile Include="Implementation\ViewController\HomeViewViewController.cs" />
+    <Compile Include="Implementation\ViewModel\HomeViewViewModel.cs" />
+    <Compile Include="Interface\Repository\IHomeViewRepository.cs" />
+    <Compile Include="Interface\Service\IHomeViewService.cs" />
+    <Compile Include="Interface\ViewController\IHomeViewViewController.cs" />
+    <Compile Include="Implementation\View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="Implementation\View\User\LoginView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

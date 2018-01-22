@@ -7,7 +7,7 @@ using System;
 using System.Threading.Tasks;
 using <#= _DataModel.ProjectName #>.Implementation.ViewModel;
 
-namespace <#= _DataModel.ProjectName #>.Interface.Reposetory
+namespace <#= _DataModel.ProjectName #>.Interface.Repository
 {
     public interface <#= _DataModel.RepositoryInterfaceName #>
     {

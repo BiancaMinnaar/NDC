@@ -3,7 +3,6 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
-
 <?xml version="1.0" encoding="UTF-8"?>
 <b:ProjectBaseContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 

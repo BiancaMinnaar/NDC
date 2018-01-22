@@ -1,4 +1,4 @@
-﻿using NCD.Interface.Repository;
+﻿using NDC.Interface.Repository;
 using PCLBase.DataContracts;
 
 namespace NDC.Implementation.Repository

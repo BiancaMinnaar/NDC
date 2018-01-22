@@ -45,7 +45,7 @@ namespace SourceConsole.Templates {
             #line hidden
             
             #line 10 ""
-            this.Write(".Interface.Reposetory\n{\n    public interface ");
+            this.Write(".Interface.Repository\n{\n    public interface ");
             
             #line default
             #line hidden

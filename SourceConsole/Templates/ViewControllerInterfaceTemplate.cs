@@ -39,7 +39,7 @@ namespace SourceConsole.Templates {
             #line hidden
             
             #line 10 ""
-            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ServiceInterfaceName ));
+            this.Write(this.ToStringHelper.ToStringWithCulture( _DataModel.ViewControllerInterfaceName ));
             
             #line default
             #line hidden

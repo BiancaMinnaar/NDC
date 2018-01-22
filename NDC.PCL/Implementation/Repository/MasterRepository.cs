@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Acr.UserDialogs;
 using CorePCL;
-using NCD.Interface.Repository;
+using NDC.Interface.Repository;
 using NDC.Implementation.ViewModel;
 using Newtonsoft.Json;
 using Xamarin.Forms;

@@ -3,13 +3,12 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
-
 using System.Threading.Tasks;
 using <#= _DataModel.ProjectName #>.Base;
 using <#= _DataModel.ProjectName #>.Implementation.Repository;
 using <#= _DataModel.ProjectName #>.Implementation.Service;
 using <#= _DataModel.ProjectName #>.Implementation.ViewModel;
-using <#= _DataModel.ProjectName #>.Interface.Reposetory;
+using <#= _DataModel.ProjectName #>.Interface.Repository;
 using <#= _DataModel.ProjectName #>.Interface.Service;
 using <#= _DataModel.ProjectName #>.Interface.ViewController;
 

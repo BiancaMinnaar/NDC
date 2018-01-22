@@ -5,7 +5,7 @@ using CorePCL;
 using NDC.Implementation.ViewModel;
 using Xamarin.Forms;
 
-namespace NCD.Interface.Repository
+namespace NDC.Interface.Repository
 {
     public interface IMasterRepository
     {
