@@ -16,13 +16,12 @@ namespace NDC.Implementation.Service
 
         public async Task LoginUser(LoginViewModel model)
         {
-			string requestURL = "/Authentication/Login/{UserName}/{Password}/{Basic}";
+			string requestURL = "/Login/{userName}/{password}";
 			var httpMethod = BaseNetworkAccessEnum.Put;
 			var parameters = new Dictionary<string, object>()
 			{
 				{"UserName", model.UserName},
-				{"Password", model.Password},
-				{"Basic", "true"}
+				{"Password", model.Password}
 			};
 			await _NetworkInterface(requestURL, parameters, httpMethod);
         }

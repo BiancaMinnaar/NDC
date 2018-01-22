@@ -19,7 +19,7 @@ namespace NDC.Implementation.View.Login
         {
         }
 
-        public async Task On_Login_Click(object sender, EventArgs e)
+        public async void On_Login_Click(object sender, EventArgs e)
         {
             await _ViewController.Login();
         }

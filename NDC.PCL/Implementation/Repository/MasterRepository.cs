@@ -8,6 +8,7 @@ using NDC.Interface.Repository;
 using NDC.Implementation.ViewModel;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using NDC.Implementation.View;
 
 namespace NDC.Implementation.Repository
 {
@@ -57,7 +58,7 @@ namespace NDC.Implementation.Repository
 
         public void PushHomeView()
         {
-            
+            _Navigation.PushAsync(new HomeViewView());
         }
 
         public void PopModal()

@@ -1,4 +1,5 @@
 ﻿using System;
+using NDC.Implementation.Repository;
 using NDC.Implementation.View.Login;
 using Xamarin.Forms;
 
@@ -10,7 +11,10 @@ namespace NDC
         {
             InitializeComponent();
 
-            MainPage = new LoginView();
+            var _MasterRepo = MasterRepository.MasterRepo;
+            _MasterRepo.SetRootView(new NavigationPage(new LoginView()));
+            //_MasterRepo.SetRootView(new NavigationPage(new TestHarnesView()));
+            MainPage = _MasterRepo.GetRootView();
         }
     }
 }
