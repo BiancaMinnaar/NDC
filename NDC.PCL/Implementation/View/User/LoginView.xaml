@@ -11,6 +11,16 @@
     BackgroundColor="#565E60"
 	Title="Login">
 	<ContentPage.Content>
-        <Label Text="LOG IN" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="User Name" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                <Entry x:Name="usernameEntry" Text="{Binding UserName, Mode=TwoWay}" Placeholder="USERNAME" BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Password" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" Placeholder="PASSWORD" IsPassword="true"  BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
+            </StackLayout>
+            <Button x:Name="btnLogin" Clicked="On_Login_Click" />
+        </StackLayout>
 	</ContentPage.Content>
 </b:ProjectBaseContentPage>

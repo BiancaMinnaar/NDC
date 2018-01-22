@@ -55,6 +55,11 @@ namespace NDC.Implementation.Repository
             _Navigation.PopAsync();
         }
 
+        public void PushHomeView()
+        {
+            
+        }
+
         public void PopModal()
         {
             _Navigation.PopModalAsync();

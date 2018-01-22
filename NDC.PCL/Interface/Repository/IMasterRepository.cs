@@ -16,7 +16,7 @@ namespace NCD.Interface.Repository
         Func<string, Dictionary<string, ParameterTypedValue>, BaseNetworkAccessEnum, Task> NetworkInterfaceWithTypedParameters { get; set; }
 
         //Navigation
-
+        void PushHomeView();
 
         //Logic
         //debug
