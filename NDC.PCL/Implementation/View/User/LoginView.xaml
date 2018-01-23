@@ -8,19 +8,29 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
 	x:Class="NDC.Implementation.View.Login.LoginView" 
 	x:TypeArguments="p:LoginViewController, m:LoginViewModel" 
-    BackgroundColor="#565E60"
+    BackgroundColor="Blue"
 	Title="Login">
 	<ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="20,20,20,20">
-            <StackLayout Orientation="Horizontal">
-                <Label Text="User Name" FontSize="15" TextColor="White" FontAttributes="Bold"/>
-                <Entry x:Name="usernameEntry" Text="{Binding UserName, Mode=TwoWay}" Placeholder="USERNAME" BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Password" FontSize="15" TextColor="White" FontAttributes="Bold"/>
-                <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" Placeholder="PASSWORD" IsPassword="true"  BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
-            </StackLayout>
-            <Button x:Name="btnLogin" Text="Login" Clicked="On_Login_Click" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="New Denmark Colliery" FontSize="30" TextColor="White" HorizontalOptions="Center" />
+            <Label Grid.Row="2" Grid.Column="0" Text="User Name" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+            <Entry Grid.Row="2" Grid.Column="1" x:Name="usernameEntry" Text="{Binding UserName, Mode=TwoWay}" Placeholder="USERNAME" BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40" WidthRequest="180"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="Password" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+            <Entry Grid.Row="3" Grid.Column="1" x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" Placeholder="PASSWORD" IsPassword="true"  BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40" WidthRequest="160"/>
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" BorderColor="White" BorderWidth="1" WidthRequest="60" x:Name="btnLogin" Text="Login" Clicked="On_Login_Click" />
+        </Grid>
+
 	</ContentPage.Content>
 </b:ProjectBaseContentPage>
