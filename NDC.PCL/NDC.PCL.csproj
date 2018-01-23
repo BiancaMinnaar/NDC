@@ -35,11 +35,6 @@
     <Compile Include="Implementation\Repository\MasterRepository.cs" />
     <Compile Include="Implementation\Service\AuthenticateService.cs" />
     <Compile Include="Implementation\Service\BaseService.cs" />
-    <Compile Include="Implementation\View\ByteArrayToImageSourceConverter.cs" />
-    <Compile Include="Implementation\View\ImageResourceExtension.cs" />
-    <Compile Include="Implementation\View\Inverter.cs" />
-    <Compile Include="Implementation\View\NullVisibilityConverter.cs" />
-    <Compile Include="Implementation\View\toUpper.cs" />
     <Compile Include="Implementation\View\Base\ProjectBaseContentPage.cs" />
     <Compile Include="Implementation\View\Base\ProjectBaseContentScrollView.cs" />
     <Compile Include="Implementation\View\Base\ProjectBaseContentView.cs" />
@@ -81,6 +76,11 @@
     <Compile Include="Implementation\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementation\View\Tools\ByteArrayToImageSourceConverter.cs" />
+    <Compile Include="Implementation\View\Tools\ImageResourceExtension.cs" />
+    <Compile Include="Implementation\View\Tools\Inverter.cs" />
+    <Compile Include="Implementation\View\Tools\NullVisibilityConverter.cs" />
+    <Compile Include="Implementation\View\Tools\toUpper.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -136,6 +136,7 @@
     <Folder Include="Implementation\View\Control\ReUsable\" />
     <Folder Include="Implementation\ViewModel\Control\" />
     <Folder Include="Test\" />
+    <Folder Include="Implementation\View\Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
