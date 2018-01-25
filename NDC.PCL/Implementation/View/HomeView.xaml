@@ -8,9 +8,23 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="NDC.Implementation.View.HomeViewView" 
     x:TypeArguments="p:HomeViewViewController, m:HomeViewViewModel" 
-    BackgroundColor="#565E60"
+    BackgroundColor="Blue"
     Title="Login">
     <ContentPage.Content>
-        <Label Text="Home Screen" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="New Denmark Colliery" FontSize="30" TextColor="White" HorizontalOptions="Center" />
+
+            <Button Grid.Row="2" Grid.Column="0" Text="Here" Image="menu.png" WidthRequest="20" HeightRequest="20" Clicked="On_HomeView_Event" />
+        </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

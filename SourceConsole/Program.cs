@@ -32,7 +32,7 @@ namespace SourceConsole
 
 			generateClass(screenData, new ViewModelTemplate(screenData), screenData.ViewModelName + ".cs");
             generateClass(screenData, new ViewTemplate(screenData), screenData.ViewName + ".xaml");
-            generateClass(screenData, new ViewCodeBehindTemplate(screenData), screenData.ViewName + ".cs");
+            generateClass(screenData, new ViewCodeBehindTemplate(screenData), screenData.ViewName + ".xaml.cs");
 			generateClass(screenData, new ViewControllerInterfaceTemplate(screenData), screenData.ViewControllerInterfaceName + ".cs");
             generateClass(screenData, new ViewControllerTemplate(screenData), screenData.ViewControllerName + ".cs");
 			generateClass(screenData, new RepositoryInterfaceTemplate(screenData), screenData.RepositoryInterfaceName + ".cs");

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using NDC.Implementation.ViewController;
@@ -6,9 +6,9 @@ using NDC.Implementation.ViewModel;
 
 namespace NDC.Implementation.View
 {
-    public partial class HomeViewView : ProjectBaseContentPage<HomeViewViewController, HomeViewViewModel>
+    public partial class HamburgerMenuView : ProjectBaseContentView<HamburgerMenuViewController, HamburgerMenuViewModel>
     {
-        public HomeViewView()
+        public HamburgerMenuView()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
@@ -19,9 +19,9 @@ namespace NDC.Implementation.View
         {
         }
 
-        public async void On_HomeView_Event(object sender, EventArgs e)
+        public async Task On_HamburgerMenu_Event(object sender, EventArgs e)
         {
-            await _ViewController.HomeView();
+            await _ViewController.HamburgerMenu();
         }
     }
 }

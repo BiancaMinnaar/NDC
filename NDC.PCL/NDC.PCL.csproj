@@ -81,6 +81,16 @@
     <Compile Include="Implementation\View\Tools\Inverter.cs" />
     <Compile Include="Implementation\View\Tools\NullVisibilityConverter.cs" />
     <Compile Include="Implementation\View\Tools\toUpper.cs" />
+    <Compile Include="Implementation\Repository\HamburgerMenuRepository.cs" />
+    <Compile Include="Implementation\Service\HamburgerMenuService.cs" />
+    <Compile Include="Implementation\View\HamburgerMenuView.xaml.cs">
+      <DependentUpon>HamburgerMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ViewController\HamburgerMenuViewController.cs" />
+    <Compile Include="Implementation\ViewModel\HamburgerMenuViewModel.cs" />
+    <Compile Include="Interface\Repository\IHamburgerMenuRepository.cs" />
+    <Compile Include="Interface\Service\IHamburgerMenuService.cs" />
+    <Compile Include="Interface\ViewController\IHamburgerMenuViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -89,6 +99,11 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Implementation\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\menu.png" />
+    <EmbeddedResource Include="Implementation\View\HamburgerMenuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
