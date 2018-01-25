@@ -11,7 +11,9 @@
     BackgroundColor="#565E60"
     Title="Login">
     <StackLayout Orientation="Horizontal">
-        
+        <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding RepeatClickedCommand}" CommandParameter="{Binding ListIndex}"/>
+            </StackLayout.GestureRecognizers>
         <StackLayout Orientation="Horizontal" BackgroundColor="Red">
             <Label Text="{Binding IndexIndicator}" />
         </StackLayout>
