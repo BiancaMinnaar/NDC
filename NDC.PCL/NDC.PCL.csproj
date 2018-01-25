@@ -91,6 +91,16 @@
     <Compile Include="Interface\Repository\IHamburgerMenuRepository.cs" />
     <Compile Include="Interface\Service\IHamburgerMenuService.cs" />
     <Compile Include="Interface\ViewController\IHamburgerMenuViewController.cs" />
+    <Compile Include="Implementation\Repository\HamburgerMenuItemRepository.cs" />
+    <Compile Include="Implementation\Service\HamburgerMenuItemService.cs" />
+    <Compile Include="Implementation\View\HamburgerMenuItemView.xaml.cs">
+      <DependentUpon>HamburgerMenuItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ViewController\HamburgerMenuItemViewController.cs" />
+    <Compile Include="Implementation\ViewModel\HamburgerMenuItemViewModel.cs" />
+    <Compile Include="Interface\Repository\IHamburgerMenuItemRepository.cs" />
+    <Compile Include="Interface\Service\IHamburgerMenuItemService.cs" />
+    <Compile Include="Interface\ViewController\IHamburgerMenuItemViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -104,6 +114,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Images\menu.png" />
     <EmbeddedResource Include="Implementation\View\HamburgerMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation\View\HamburgerMenuItemView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
