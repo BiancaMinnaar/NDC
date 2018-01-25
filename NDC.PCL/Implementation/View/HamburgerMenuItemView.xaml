@@ -10,5 +10,13 @@
     x:TypeArguments="p:HamburgerMenuItemViewController, m:HamburgerMenuItemViewModel" 
     BackgroundColor="#565E60"
     Title="Login">
-
+    <StackLayout Orientation="Horizontal">
+        
+        <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+            <Label Text="{Binding IndexIndicator}" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="{Binding Description}" />
+        </StackLayout>
+    </StackLayout>
 </b:ProjectBaseContentView>

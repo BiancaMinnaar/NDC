@@ -10,5 +10,5 @@
     x:TypeArguments="p:HamburgerMenuViewController, m:HamburgerMenuViewModel" 
     BackgroundColor="#565E60"
     Title="Login">
-    <Label Text="Menu" />
+    <StackLayout x:Name="MenuContent" Orientation="Vertical"></StackLayout>
 </b:ProjectBaseContentView>
